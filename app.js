@@ -1,5 +1,5 @@
 // Link de la "Aplicación web" de Apps Script (la que guarda en el Google Sheets).
-const URL_PLANILLA = "https://script.google.com/macros/s/AKfycby_SQE1t_rX0kaW0FeL8aOmw617AJgBtrA50JFhYdReQYAuAz4DTnyLKiWax3clh_2mXQ/exec";
+const URL_PLANILLA = "https://script.google.com/macros/s/AKfycbwblONk_OhM9HaVBrwZgE4piLeYtwRTlMqiiMrvKfy9klMc9m5VeHiEf0YG3PJVHtGC7w/exec";
 
 const lista = document.getElementById("invitados");
 const tpl = document.getElementById("tpl-invitado");
