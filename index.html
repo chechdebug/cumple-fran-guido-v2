@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cumple de Fran y Guido · Sábado 5/12</title>
+  <meta name="description" content="Pool party en Montecarlo, Party Bus y boliche. Anotate acá.">
+  <meta property="og:title" content="Cumpleaños de Fran y Guido 🎉">
+  <meta property="og:description" content="Sábado 5/12 desde las 11 · Barrio Montecarlo, Del Viso. Pool party, Party Bus y boliche. ¡Anotate!">
+  <meta property="og:image" content="https://chechdebug.github.io/cumple-fran-guido-v2/img/og.jpg">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23000'/><text x='50' y='72' font-size='64' font-family='Arial Black,Arial' font-weight='900' text-anchor='middle' fill='%23FF8700'>&amp;</text></svg>">
+  <link rel="preload" href="fonts/PPNeueMachina-PlainBold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="estilos.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <!-- Íconos (trazo blanco, como en el flyer) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-sol" viewBox="0 0 48 48"><circle cx="24" cy="24" r="9"/><path d="M24 4v6M24 38v6M4 24h6M38 24h6M9.9 9.9l4.2 4.2M33.9 33.9l4.2 4.2M9.9 38.1l4.2-4.2M33.9 14.1l4.2-4.2"/></symbol>
+      <symbol id="i-bus" viewBox="0 0 48 48"><rect x="5" y="9" width="38" height="26" rx="5"/><path d="M5 22h38M14 9v13M24 9v13M34 9v13"/><circle cx="14" cy="37" r="3.5"/><circle cx="34" cy="37" r="3.5"/></symbol>
+      <symbol id="i-bola" viewBox="0 0 48 48"><circle cx="24" cy="26" r="15"/><path d="M9 26h30M24 11v30M12 18h24M12 34h24M18 12.5c-3 8-3 19 0 27M30 12.5c3 8 3 19 0 27M24 4v7"/><path d="M41 6l1 3 3 1-3 1-1 3-1-3-3-1 3-1z"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 48 48"><path d="M24 44s14-13.5 14-24a14 14 0 0 0-28 0c0 10.5 14 24 14 24z"/><circle cx="24" cy="20" r="5"/></symbol>
+      <symbol id="i-jarra" viewBox="0 0 48 48"><path d="M9 14h24v28H9z"/><path d="M33 19h4a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4h-4M15 20v16M21 20v16M27 20v16"/><path d="M8 14c0-4 3-7 7-6 1-3 6-4 8-1 3-2 8 0 8 3 2 0 3 2 3 4"/></symbol>
+      <symbol id="i-malla" viewBox="0 0 48 48"><path d="M8 12h32l-3 26H28l-4-12-4 12h-9z"/><path d="M8 18h32"/></symbol>
+      <symbol id="i-remera" viewBox="0 0 48 48"><path d="M17 6l-11 7 4 9 5-3v23h18V19l5 3 4-9-11-7c-1 4-4 6-7 6s-6-2-7-6z"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- PORTADA -->
+  <header class="portada">
+    <div class="halo" aria-hidden="true"></div>
+    <div class="contenedor portada-grid">
+      <div class="portada-texto">
+        <p class="etiqueta"><span class="punto-vivo" aria-hidden="true"></span>Cumpleaños · 05.12.26</p>
+        <h1 class="titulo-gigante revela">
+          <span class="palabra">Fran</span>
+          <span class="palabra amp">&amp;</span>
+          <span class="palabra">Guido</span>
+        </h1>
+        <p class="bajada revela">La idea es pasar el día en la pile y a la noche salir. Vos poné las ganas, nosotros el resto.</p>
+        <ul class="pills revela" aria-label="Datos">
+          <li class="pill pill-solar">Sáb 5/12</li>
+          <li class="pill">Desde las 11 AM</li>
+          <li class="pill">Montecarlo · Del Viso</li>
+        </ul>
+
+        <div class="cuenta revela" id="cuenta" aria-label="Cuenta regresiva">
+          <div><b data-u="d">--</b><span>días</span></div>
+          <div><b data-u="h">--</b><span>horas</span></div>
+          <div><b data-u="m">--</b><span>min</span></div>
+          <div><b data-u="s">--</b><span>seg</span></div>
+        </div>
+
+        <a class="boton revela" href="#anotate">Me anoto <span aria-hidden="true">→</span></a>
+      </div>
+
+      <figure class="sticker revela">
+        <img src="img/fran-guido.webp" alt="Ilustración de Fran y Guido" width="1514" height="1039">
+      </figure>
+    </div>
+  </header>
+
+  <main>
+    <!-- EL PLAN -->
+    <section class="seccion" id="plan">
+      <div class="contenedor">
+        <p class="etiqueta">El plan · día → noche</p>
+        <h2 class="revela">Tres paradas, <em>un solo día</em></h2>
+        <div class="tarjetas">
+          <article class="tarjeta revela">
+            <div class="tarjeta-top"><span class="num">01</span><span class="pill pill-chica">11 AM</span></div>
+            <svg class="icono"><use href="#i-sol"/></svg>
+            <h3>Pool party</h3>
+            <p>Todo el día en Montecarlo. Traé lo que vas a tomar y traje de baño, la pile la ponemos nosotros.</p>
+          </article>
+          <article class="tarjeta revela">
+            <div class="tarjeta-top"><span class="num">02</span><span class="pill pill-chica">Desde Pilar</span></div>
+            <svg class="icono"><use href="#i-bus"/></svg>
+            <h3>Party Bus</h3>
+            <p>A la noche salimos en Party Bus desde Pilar. Si venís en el bus, <b>llevá una muda</b>.</p>
+          </article>
+          <article class="tarjeta revela">
+            <div class="tarjeta-top"><span class="num">03</span><span class="pill pill-chica pill-borde">A confirmar</span></div>
+            <svg class="icono"><use href="#i-bola"/></svg>
+            <h3>Boliche</h3>
+            <p>Cerramos en un boliche en CABA. El lugar y el precio los avisamos más adelante.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CÓMO LLEGAR + QUÉ LLEVAR -->
+    <section class="seccion">
+      <div class="contenedor dos-col">
+        <div class="bloque revela">
+          <p class="etiqueta">Cómo llegar</p>
+          <h2>Barrio <em>Montecarlo</em></h2>
+          <p class="texto-grande">Del Viso, Pilar. El colectivo te deja en la parada del barrio:</p>
+          <ul class="pills">
+            <li class="pill pill-linea"><svg class="icono-mini"><use href="#i-bus"/></svg>Línea 57</li>
+            <li class="pill pill-linea"><svg class="icono-mini"><use href="#i-bus"/></svg>Línea 203</li>
+          </ul>
+          <a class="boton boton-secundario" href="https://www.google.com/maps/search/?api=1&query=-34.43194,-58.81306" target="_blank" rel="noopener">
+            <svg class="icono-mini"><use href="#i-pin"/></svg> Abrir en Google Maps
+          </a>
+          <p class="nota">¿No vas en el Party Bus? A la tarde/noche cada uno se vuelve y nos juntamos para previar e ir al boliche.</p>
+        </div>
+
+        <div class="bloque revela">
+          <p class="etiqueta">Qué llevar</p>
+          <h2>La <em>mochila</em></h2>
+          <ul class="checklist">
+            <li><svg class="icono-mini"><use href="#i-jarra"/></svg><span>Lo que vas a tomar <small>birra / fernet / etc</small></span></li>
+            <li class="agua"><svg class="icono-mini"><use href="#i-malla"/></svg><span>Traje de baño <small>sin excepción</small></span></li>
+            <li><svg class="icono-mini"><use href="#i-remera"/></svg><span>Muda para la noche <small>si vas en el bus</small></span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULARIO -->
+    <section class="seccion formulario" id="anotate">
+      <div class="contenedor angosto">
+        <p class="etiqueta">Confirmación</p>
+        <h2 class="revela">Anotate <em>ya</em></h2>
+        <p class="texto-grande">Completá tus datos. Si venís con alguien, sumalo con <b>+ Agregar otro invitado</b>.</p>
+
+        <form id="form" novalidate>
+          <div id="invitados"></div>
+
+          <button type="button" class="boton-agregar" id="agregar">+ Agregar otro invitado</button>
+
+          <label class="campo">
+            <span>Comentario (opcional)</span>
+            <textarea name="comentario" rows="3" maxlength="500" placeholder="¿Algo que quieras avisar?"></textarea>
+          </label>
+
+          <p class="error" id="error" role="alert" hidden></p>
+          <button type="submit" class="boton boton-enviar" id="enviar">Confirmar</button>
+        </form>
+
+        <div class="listo" id="listo" hidden>
+          <span class="pill pill-solar"><svg class="icono-mini"><use href="#i-check"/></svg> Anotado</span>
+          <p class="listo-titulo">¡Listo, te <em>esperamos</em>!</p>
+          <p id="listo-nombres"></p>
+          <button type="button" class="boton boton-secundario" id="otra">Anotar a alguien más</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="halo halo-pie" aria-hidden="true"></div>
+    <p class="pie-titulo revela">¡No <em>faltes</em>!</p>
+    <p class="etiqueta">Sáb 5/12 · 11 AM · Montecarlo</p>
+  </footer>
+
+  <template id="tpl-invitado">
+    <fieldset class="invitado">
+      <legend>Invitado <span class="num"></span></legend>
+      <button type="button" class="quitar" aria-label="Quitar invitado">✕</button>
+      <label class="campo">
+        <span>Nombre y apellido *</span>
+        <input type="text" name="nombre" autocomplete="name" maxlength="80" required>
+      </label>
+      <label class="campo">
+        <span>WhatsApp</span>
+        <input type="tel" name="whatsapp" autocomplete="tel" inputmode="tel" maxlength="30" placeholder="11 2345 6789">
+      </label>
+      <div class="actividades">
+        <span>¿A qué vas?</span>
+        <label class="chip"><input type="checkbox" name="pool" checked> Pool party</label>
+        <label class="chip"><input type="checkbox" name="bus" checked> Party Bus</label>
+        <label class="chip"><input type="checkbox" name="boliche" checked> Boliche</label>
+      </div>
+    </fieldset>
+  </template>
+
+  <script src="app.js"></script>
+  <script src="movimiento.js"></script>
+</body>
+</html>
