@@ -97,6 +97,8 @@ form.addEventListener("submit", async (e) => {
       (nombres.length > 1 ? "Quedaron anotados: " : "Quedó anotado/a: ") + nombres.join(", ") + ".";
     form.hidden = true;
     listo.hidden = false;
+    // Explosión solo cuando el envío salió bien.
+    new Audio("sonido/explosion.mp3").play().catch(() => {});
     listo.scrollIntoView({ behavior: "smooth", block: "center" });
   } catch (err) {
     mostrarError("No se pudo enviar. Revisá tu conexión y probá de nuevo.");

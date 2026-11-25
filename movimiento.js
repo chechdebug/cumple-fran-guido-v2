@@ -7,16 +7,20 @@ const cuenta = document.getElementById("cuenta");
 const celdas = {};
 cuenta.querySelectorAll("[data-u]").forEach((b) => (celdas[b.dataset.u] = b));
 const dos = (n) => String(n).padStart(2, "0");
+const frase = document.getElementById("frase-dias");
 
 function tic() {
   const resta = INICIO - Date.now();
   if (resta <= 0) {
     cuenta.classList.add("ya");
     cuenta.innerHTML = "<div><b>¡Es hoy!</b><span>nos vemos en la pile</span></div>";
+    frase.textContent = "¡Es hoy!";
     return;
   }
   const s = Math.floor(resta / 1000);
-  celdas.d.textContent = Math.floor(s / 86400);
+  const dias = Math.floor(s / 86400);
+  celdas.d.textContent = dias;
+  frase.textContent = dias === 1 ? "1 día falta" : dias + " días faltan";
   celdas.h.textContent = dos(Math.floor((s % 86400) / 3600));
   celdas.m.textContent = dos(Math.floor((s % 3600) / 60));
   celdas.s.textContent = dos(s % 60);

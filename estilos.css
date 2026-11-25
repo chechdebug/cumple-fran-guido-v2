@@ -87,7 +87,7 @@ em { font-style: normal; color: var(--solar); }
 .portada-grid { display: grid; gap: 40px; }
 
 .titulo-gigante {
-  font-size: clamp(4.4rem, 24vw, 10.5rem);
+  font-size: clamp(2.9rem, 13.5vw, 6.2rem);
   display: flex; flex-wrap: wrap; align-items: baseline; column-gap: .18em;
   margin-bottom: 22px;
 }
@@ -95,6 +95,8 @@ em { font-style: normal; color: var(--solar); }
 .amp { color: var(--solar); }
 
 .bajada { font-size: 1.2rem; max-width: 30ch; margin: 0 0 22px; color: #cfcfcf; }
+.subtitulo { font-family: var(--titulo); text-transform: uppercase; font-size: clamp(1.5rem, 5vw, 2.1rem); margin: -6px 0 22px; color: var(--starlight); letter-spacing: .02em; }
+.frase-dias { font-weight: 700; font-size: 1.25rem; color: var(--solar); margin: 0 0 12px; min-height: 1.6em; }
 
 .pills { list-style: none; padding: 0; margin: 0 0 26px; display: flex; flex-wrap: wrap; gap: 8px; }
 .pill {
@@ -145,12 +147,12 @@ em { font-style: normal; color: var(--solar); }
 
 /* sticker con la ilustración */
 .sticker {
-  margin: 0; justify-self: center; width: min(100%, 520px);
+  margin: 0; justify-self: center; width: min(92%, 460px);
   background: var(--solar); border-radius: 28px;
   padding: 26px 10px 0; overflow: hidden;
-  border: 6px solid var(--starlight);
+  border: 8px solid var(--starlight);
   transform: rotate(-3deg);
-  box-shadow: 0 30px 80px rgba(255,135,0,.18);
+  box-shadow: 0 0 0 4px var(--negro), 0 34px 90px rgba(255,135,0,.35);
 }
 .sticker img { display: block; width: 100%; height: auto; }
 
@@ -304,7 +306,8 @@ input.invalido { border-color: #FF4D4D; background: #1f0d0d; }
 @media (min-width: 860px) {
   .portada { padding: 80px 0 100px; }
   .portada-grid { grid-template-columns: 1.15fr .85fr; align-items: center; gap: 48px; }
-  .titulo-gigante { font-size: clamp(6rem, 11vw, 10.5rem); }
+  .titulo-gigante { font-size: clamp(4.6rem, 7.4vw, 7.4rem); }
+  .sticker { width: min(100%, 440px); justify-self: end; }
   .titulo-gigante .amp { margin-left: -.05em; }
   .seccion { padding: 110px 0; }
   .tarjetas { grid-template-columns: repeat(3, 1fr); }
