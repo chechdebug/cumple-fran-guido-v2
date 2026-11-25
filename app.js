@@ -60,7 +60,6 @@ form.addEventListener("submit", async (e) => {
     }
     invitados.push({
       nombre: valor,
-      whatsapp: f.querySelector("[name=whatsapp]").value.trim(),
       pool: f.querySelector("[name=pool]").checked,
       bus: f.querySelector("[name=bus]").checked,
       boliche: f.querySelector("[name=boliche]").checked,
